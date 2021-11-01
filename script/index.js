@@ -1,5 +1,5 @@
 // 
-function CardPost(num) {
+function cardPost(num) {
     localStorage.setItem("postId", num);
 }
 
@@ -14,8 +14,8 @@ function getPosts() {
                 html += `
         
                 <div class=" col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <a href = "post.html" class="text-decoration-none text-black" onclick="sadCard(${e.id})">
-                        <div class="card h-100" title="see post" id='${e.id}'>
+                    <a href = "post.html" class="text-decoration-none text-black" onclick="cardPost(${e.id})">
+                        <div class="card h-100" id='${e.id}'>
                             <div class="card-body" id='${e.id}'>
                                 <h6 class="post-body text-center text-success">${e.id}</h6>
                                 <h5 class="post-title mb-4">${e.title}</h5>
